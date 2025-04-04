@@ -8,11 +8,13 @@ SlitherGasAnalyzer is a specialized tool designed to detect Gas-wasting patterns
 * **Interactive Visual Interface:** Built on Streamlit, the app.py offers an intuitive interactive interface. It generates detailed reports on Gas waste analysis, including visualizations of issue statistics and provides actionable optimization suggestions.
 * **Data Persistence:** The AnalysisDB class in app.py enables the storage and retrieval of historical analysis results.
 
-
-
-
-
-
+## Installation
+### Prerequisites
+* Python 3.7 or higher
+* Install required Python packages:
+```bash
+pip install streamlit slither-io semantic-version crytic-compile requests pandas matplotlib
+```
 
 
 
