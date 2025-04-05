@@ -13,14 +13,14 @@ SlitherGasAnalyzer is a specialized tool designed to detect Gas-wasting patterns
 * Python 3.7 or higher
 * Install required Python packages:
 ```bash
-pip install streamlit slither-io semantic-version crytic-compile requests pandas matplotlib
+pip install streamlit slither-io semantic-version crytic-compile requests pandas matplotlib sqlite3
 ```
 * Install solc-select for Solidity compiler version management.
 
 ### Clone the Repository
 ```bash
 git clone https://github.com/zl2024525/SlitherGasAnalyzer.git
-cd [repository-directory]
+cd SlitherGasAnalyzer
 ```
 
 ### Set up Environment Variables
@@ -41,7 +41,7 @@ streamlit run app.py
 ### Contract Analysis
 * On the "Contract Analysis" page, upload one or more Solidity contract files(*.sol).
 * Click the "Start Analysis" button. The tool will analyze the contracts, detect Gas-wasting patterns, calculate Gas costs, and display the results.
-* The results include Gas consumption analysis, issue statistics (presented as a pie chart and a table), and optimization suggestion.
+* The results include Gas consumption analysis, issue statistics (presented as a pie chart and a table), and optimization suggestions.
 
 ### Analysis History
 * Navigate to the "History" page in the sidebar. Here, you can view a list of past analysis results.
