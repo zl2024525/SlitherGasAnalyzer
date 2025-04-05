@@ -15,7 +15,37 @@ SlitherGasAnalyzer is a specialized tool designed to detect Gas-wasting patterns
 ```bash
 pip install streamlit slither-io semantic-version crytic-compile requests pandas matplotlib
 ```
+* Install solc-select for Solidity compiler version management.
 
+### Clone the Repository
+```bash
+git clone https://github.com/zl2024525/SlitherGasAnalyzer.git
+cd [repository-directory]
+```
 
+### Set up Environment Variables
+* Create a .env file in the root directory of the project.
+* Add your INFURA_PROJECT_ID if you plan to use the Ethereum network connection in the tool:
+```bash
+INFURA_PROJECT_ID = your-infura-project-id
+```
 
+## Usage
+### Running the Application
+* Start the Streamlit application:
+```bash
+streamlit run app.py
+```
+* A browser window will open, presenting the SlitherGasAnalyzer interface.
 
+### Contract Analysis
+* On the "Contract Analysis" page, upload one or more Solidity contract files(*.sol).
+* Click the "Start Analysis" button. The tool will analyze the contracts, detect Gas-wasting patterns, calculate Gas costs, and display the results.
+* The results include Gas consumption analysis, issue statistics (presented as a pie chart and a table), and optimization suggestion.
+
+### Analysis History
+* Navigate to the "History" page in the sidebar. Here, you can view a list of past analysis results.
+* Click on a specific record to view its detailed analysis. You can also delete or export selected records.
+
+## Note
+About VersusOriginalSlither.py: This file can be used to compare the results of SlitherGasAnalyzer with the original Slither tool. It analyzes smart contracts using the original Slither and shows that SlitherGasAnalyzer is more focused on Gas-waste detection, while the original Slither is mainly for security vulnerability analysis.
